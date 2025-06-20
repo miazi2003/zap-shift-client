@@ -1,0 +1,16 @@
+.liSetup{ 
+    display: flex; 
+    align-items: center;
+    color: rgb(102, 102, 102);
+    padding: 5px 10px;
+}
+.liDiv{
+    display: flex ;
+    align-items: center;
+    gap: 15px;
+    
+}
+.active{
+    background-color: #cbeb68;
+    border-radius: 20px;
+}

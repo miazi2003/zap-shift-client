@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+.primaryBG{
+background-color: #cbeb68;
+}
+.primaryText{
+color-scheme: #cbeb68;
+}
+
+.font{
+  font-family: "Urbanist", sans-serif;
+}
