@@ -13,3 +13,38 @@ color-scheme: #cbeb68;
 .font{
   font-family: "Urbanist", sans-serif;
 }
+
+.swiper-slide {
+  opacity: 0.4;
+
+  margin-top: 100px;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+    margin-top: 20px;
+ 
+ 
+}
+
+@media (max-width: 400px) {
+  .swiper-slide {
+    opacity: 1;
+  }
+}
+
+
+.custom-pagination .swiper-pagination-bullet {
+  background-color: #03373d;
+  opacity: 0.3;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background-color: #03373d;
+  opacity: 1;
+  transform: scale(2);
+}

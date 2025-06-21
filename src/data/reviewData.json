@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Ariana Gomez",
+    "profession": "Fashion Designer",
+    "avatar": "https://i.pravatar.cc/150?img=1",
+    "review": "The delivery was smooth and fast. I received my parcels earlier than expected, and everything was in perfect condition. Highly recommend!"
+  },
+  {
+    "name": "James Lee",
+    "profession": "E-commerce Store Owner",
+    "avatar": "https://i.pravatar.cc/150?img=2",
+    "review": "Your real-time tracking feature gave me peace of mind. I could see exactly where my shipment was at every step. Very reliable service!"
+  },
+  {
+    "name": "Sara Ibrahim",
+    "profession": "Photographer",
+    "avatar": "https://i.pravatar.cc/150?img=3",
+    "review": "Excellent customer support! They helped me track a last-minute delivery and made sure it reached on time. Truly professional team."
+  },
+  {
+    "name": "Daniel Chowdhury",
+    "profession": "Business Analyst",
+    "avatar": "https://i.pravatar.cc/150?img=4",
+    "review": "I’ve been using this service for months now. Not once has a package arrived late or damaged. Really trustworthy company."
+  },
+  {
+    "name": "Emily Carter",
+    "profession": "Freelance Writer",
+    "avatar": "https://i.pravatar.cc/150?img=5",
+    "review": "As someone who frequently ships documents, I appreciate the speed and care they take with every parcel. Never lost a thing!"
+  },
+  {
+    "name": "Muhammad Rafiq",
+    "profession": "Tech Entrepreneur",
+    "avatar": "https://i.pravatar.cc/150?img=6",
+    "review": "The delivery speed and accuracy are unmatched. Their tracking and updates are exactly what a modern logistics company should offer."
+  },
+  {
+    "name": "Sophia Nguyen",
+    "profession": "Event Planner",
+    "avatar": "https://i.pravatar.cc/150?img=7",
+    "review": "I’ve used this service for both personal and business deliveries, and they always exceed expectations. Dependable and courteous!"
+  },
+  {
+    "name": "Rajdeep Das",
+    "profession": "Online Seller",
+    "avatar": "https://i.pravatar.cc/150?img=8",
+    "review": "They handle fragile items so well! Nothing broken, nothing late. Just a flawless experience every time I ship with them."
+  },
+  {
+    "name": "Isabella Wright",
+    "profession": "Teacher",
+    "avatar": "https://i.pravatar.cc/150?img=9",
+    "review": "Clear communication, on-time delivery, and friendly service. What more could a customer want? Keep up the good work!"
+  },
+  {
+    "name": "Ahmed Ali",
+    "profession": "Logistics Manager",
+    "avatar": "https://i.pravatar.cc/150?img=10",
+    "review": "Working in logistics, I know how hard it is to get things right every time — but this company nails it. Truly impressive service!"
+  }
+]
