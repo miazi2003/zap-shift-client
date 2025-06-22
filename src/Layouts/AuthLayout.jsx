@@ -12,9 +12,9 @@ const AuthLayout = () => {
       className=""
     />
     </div>
-    <div className='flex flex-col  w-1/2 py-8'>
-        <div className='text-2xl  font-bold px-8'><BrandLogo></BrandLogo></div>
-        <div className='flex  lg:mt-12 lg:-ml-32 '>
+    <div className='flex flex-col  w-1/2 py-2'>
+        <div className='text-2xl  font-bold px-8 max-w-max'><BrandLogo></BrandLogo></div>
+        <div className='flex   lg:-ml-32 '>
              <Outlet></Outlet>
         </div>
     </div>

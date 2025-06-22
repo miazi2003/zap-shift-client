@@ -1,9 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import "./Navbar.css";
 import BrandLogo from "../brandLogo/BrandLogo";
+import useAuth from "../../../hook/useAuth";
 
 const Navbar = () => {
+  const {user , signOutUser} = useAuth()
   const link = (
     <>
       <div className="liDiv">
@@ -13,9 +15,18 @@ const Navbar = () => {
         <NavLink to={"/about"}>
           <li className="liSetup">About Us</li>
         </NavLink>
+        <NavLink to={"/coverage"}>
+          <li className="liSetup">Coverage</li>
+        </NavLink>
       </div>
     </>
   );
+
+
+
+  const handleLogOut = () =>{
+    signOutUser().then(res=>{console.log(res , "log out done")}).catch(err=>{console.log(err.message)})
+  }
   return (
     <div className="navbar bg-base-100 lg:h-[70px] shadow-sm rounded-2xl max-w-7xl mx-auto">
       <div className="navbar-start">
@@ -52,7 +63,10 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 font-medium">{link}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        {
+          user ? <><Link to={'/'} onClick={()=>{handleLogOut()}}><button>Log Out</button></Link>
+       </> : <><Link to={"/login"}><button >Log In</button></Link></>
+        }
       </div>
     </div>
   );

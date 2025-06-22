@@ -1,27 +1,39 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
 
+
 const Login = () => {
+    const { register , handleSubmit, formState : {errors} } = useForm()
+
+
+    const onSubmit = data =>{
+        console.log(data)
+    }
   return (
-    <div className="hero w-full">
+    <div className="hero w-full lg:mt-10">
       <div className="card-body flex flex-col gap-2 w-1/2">
         <h1 className="text-4xl font-bold">Welcome Home</h1>
         <p>Login With ProFast</p>
-        <fieldset className="fieldset w-full">
+       <form action="" onSubmit={handleSubmit(onSubmit)}>
+         <fieldset className="fieldset w-full">
           <label className="label text-black font-bold">Email</label>
-          <input type="email" className="input w-full" placeholder="Email" />
-          <label className="label text-black font-bold">Password</label>
+          <input type="email" {...register('email')} className="input w-full" placeholder="Email" />
+          <label className="label  text-black font-bold">Password</label>
           <input
             type="password"
             className="input w-full"
+            {...register('password' , {required : true , minLength : 6})}
             placeholder="Password"
           />
+        {errors.password ?.type === "required" && <p className="text-red-900">password needed</p>}
+        {errors.password ?.type === "minLength" && <p  className="text-red-900">6  needed</p>}
           <div>
             <a className="link link-hover text-gray-600 text-sm underline">
               Forgot Password?
             </a>
           </div>
-          <button className="btn bg-[#caeb66] border-[#caeb66] hover:bg-[#caeb6640] duration-300 mt-4">
+          <button type="submit" className="btn bg-[#caeb66] border-[#caeb66] hover:bg-[#caeb6640] duration-300 mt-4">
             Login
           </button>
           <p className="text-gray-600 text-sm mt-2">
@@ -36,6 +48,7 @@ const Login = () => {
             Login with Google
           </button>
         </fieldset>
+       </form>
       </div>
     </div>
   );
