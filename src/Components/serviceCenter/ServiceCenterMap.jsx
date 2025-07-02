@@ -43,9 +43,9 @@ const ServiceCenterMap = () => {
   };
 
   return (
-    <div>
+    <div className=" px-8 py-4 flex flex-col gap-4 bg-white rounded-3xl">
 
-    <div>
+    <div className="text-4xl text-[#03373d] font-bold ">
       <h1>We are available in 64 districts</h1>
     </div>
 
@@ -53,31 +53,35 @@ const ServiceCenterMap = () => {
 
 
       {/* Search input */}
-      <form onSubmit={handleSearch} className="mb-4 flex gap-2 justify-center">
+      <form onSubmit={handleSearch} className="mb-4 flex  relative max-w-max">
         <input
           type="text"
           placeholder="Enter city name"
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
-          className="border px-4 py-2 rounded w-64"
+          className="border-none px-4 py-2 rounded-3xl lg:w-96 h-9 bg-gray-200 "
         />
-        <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">
+        <button type="submit" className= "absolute right-0 bg-[#caeb66]  text-black text-sm font-bold px-4 py-2 rounded-3xl h-9 flex items-center justify-center">
           Search
         </button>
       </form>
 
+      <div className="w-full border border-gray-200"></div>
+      <div>
+        <p className="text-lg font-bold text-[#03373d]">We Are Almost All Over Bangladesh </p>
+      </div>
+
       {/* Map */}
-      <div className="w-full h-[600px]">
+      <div className="w-full h-[300px]">
         <MapContainer
           center={[23.8103, 90.4125]} // Default to Dhaka
-          zoom={7}
+          zoom={6}
           scrollWheelZoom={true}
           style={{ height: "100%", width: "100%" }}
           ref={mapRef}
         >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution="&copy; OpenStreetMap contributors"
           />
 
           {selectedPosition && <ChangeMapView center={selectedPosition} zoom={12}/>}

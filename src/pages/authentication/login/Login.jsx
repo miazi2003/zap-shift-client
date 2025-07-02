@@ -1,12 +1,15 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
+import useAuth from "../../../hook/useAuth";
 
 
 const Login = () => {
     const { register , handleSubmit, formState : {errors} } = useForm()
-
-
+  const {googleLogin} = useAuth()
+const handleGoogleLogin = () =>{
+  googleLogin().then(res=>{console.log(res.user)}).catch(err=>{console.log(err)})
+}
     const onSubmit = data =>{
         console.log(data)
     }
@@ -43,12 +46,13 @@ const Login = () => {
             </a>
           </p>
           <div className="text-center py-2">OR</div>
-          <button className="btn bg-gray-200 text-black border-[#e5e5e5]">
+       
+        </fieldset>
+       </form>
+          <button className="btn bg-gray-200 text-black border-[#e5e5e5]" onClick={()=>{handleGoogleLogin()}}>
           <FcGoogle size={20} />
             Login with Google
           </button>
-        </fieldset>
-       </form>
       </div>
     </div>
   );

@@ -6,6 +6,8 @@ import ClientLogoMarquee from "../../Components/clientLogo/ClientLogoMarquee";
 import DeliveryService from "../../Components/DelivaryService/DeliveryService";
 import Merchant from "../../Components/Merchent/Marchant";
 import ReviewComponent from "../../Components/review/ReviewComponent";
+import MultiStepForm from "../../Components/multi/MultiStepForm";
+
 
 const Home = () => {
   return (
@@ -17,6 +19,45 @@ const Home = () => {
       <DeliveryService></DeliveryService>
       <Merchant></Merchant>
       <ReviewComponent></ReviewComponent>
+      {/* <MultiStepForm></MultiStepForm> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       
     </div>
   );
